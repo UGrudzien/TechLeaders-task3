@@ -1,0 +1,199 @@
+@import "global";
+@import "variables";
+.mainTower {
+    width: 60px;
+    height: 200px;
+    background: blue;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    &__side {
+        height: 100%;
+        background: linear-gradient(to right, @lightblue 20%, @blue 22%, @blue 74%, @darkblue 75%);
+    }
+    &__windowsTear {
+        .windowTowerTop;
+        position: absolute;
+        top: 22%;
+        left: 29%;
+    }
+    &__mainWindow {
+        display: inline-table;
+        height: 100px;
+        max-width: 30%;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        &--rigth {
+            left: 50%;
+        }
+        &--baseleft {
+            top: 104%;
+            left: -1%;
+        }
+        &--baseleft--rigth {
+            top: 104%;
+            left: 9%;
+        }
+        &--basecenter {
+            top: 104%;
+            left: 36%;
+        }
+        &--basecenter--rigth {
+            top: 104%;
+            left: 49%;
+        }
+        &--baserigth {
+            top: 104%;
+            left: 77%;
+        }
+        &--baserigth--rigth {
+            top: 104%;
+            left: 89%;
+        }
+        &__windowSquer {
+            width: 10px;
+            height: 10px;
+            background: @lightgreen;
+            border-style: solid;
+            border-color: white;
+            border-width: 1px;
+            &__left-rigth {
+                width: 5px;
+                height: 5px;
+                background: @lightblue;
+                &__center {
+                    width: 7px;
+                    height: 5px;
+                    background: @lightblue;
+                }
+            }
+        }
+    }
+    &__base {
+        width: 80px;
+        height: 40px;
+        background: @red;
+        position: absolute;
+        top: 100%;
+        left: -18%;
+    }
+    &__triangle {
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 33px solid @red;
+        position: absolute;
+        top: 84%;
+        left: -17%;
+        &--middle {
+            border-left: 16px solid transparent;
+            border-right: 16px solid transparent;
+            border-bottom: 70px solid @red;
+            position: absolute;
+            top: 65%;
+            left: 23%;
+        }
+        &--last {
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 33px solid @red;
+            position: absolute;
+            top: 84%;
+            left: 76%;
+        }
+        &__middle {
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 24px solid @lightred;
+            position: absolute;
+            top: 89%;
+            left: -7%;
+            &--middle {
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 33px solid @lightred;
+                position: absolute;
+                top: 84%;
+                left: 36%;
+            }
+            &--last {
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-bottom: 24px solid @lightred;
+                position: absolute;
+                top: 89%;
+                left: 86%;
+            }
+        }
+    }
+    &__bluebase {
+        width: 70px;
+        height: 44px;
+        background: @blue;
+        position: absolute;
+        top: 122%;
+        left: -8%;
+    }
+    .shortWindow {
+        border-color: @verydarkBlue;
+        &--left {
+            position: absolute;
+            top: 7%;
+            left: 9%;
+        }
+        &--right {
+            position: absolute;
+            top: 7%;
+            left: 85%;
+        }
+    }
+    &__balcony {
+        .balcony;
+        width: 75px;
+        height: 10px;
+        position: absolute;
+        top: -10%;
+        left: -10%;
+    }
+    &__balconyBase {
+        .balconyBase;
+        position: absolute;
+        top: -5%;
+        left: -10%;
+    }
+    &__smallTower {
+        height: 40px;
+        width: 50px;
+        background: linear-gradient(to right, @lightred 20%, @red 22%, @red 74%, @darkred 75%);
+        position: absolute;
+        top: -32%;
+        left: 6%;
+    }
+    &__baseRoof {
+        position: absolute;
+        top: -51%;
+        left: -2%;
+        border-bottom: 35px solid @red;
+        background: linear-gradient(to right, @lightred 20%, @red 22%, @red 74%, @darkred 75%);
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        height: 0;
+        width: 24px;
+    }
+    &__roofTop{
+         width: 0;
+        height: 0;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        border-bottom: 90px solid @red;
+        position: absolute;
+        top: -96%;
+        left: -25%;
+    }
+}

@@ -1,0 +1,147 @@
+@import "variables";
+.castlebase {
+    position: absolute;
+    top: 72%;
+    left: 37%;
+    height: 100px;
+    width: 300px;
+    &__base {
+        height: 5px;
+        background: @green;
+        width: 316px;
+        position: absolute;
+        left: -2%;
+    }
+    &__middle {
+        height: 40px;
+        background: linear-gradient(to bottom, @lightgreen 49%, @green 53%);
+    }
+    &__base--last {
+        height: 3px;
+        width: 315px;
+        position: absolute;
+        left: -2%;
+        background: @green;
+    }
+    &__redbase {
+        height: 60px;
+        width: 300px;
+        position: absolute;
+        background: linear-gradient(to bottom, @lightred 49%, @red 53%);
+        top: 43%;
+        border-top-style: solid;
+        border-top-color: white;
+        border-top-width: 5px;
+    }
+    &__redwindow {
+        width: 30px;
+        height: 50px;
+        background-color: darkred;
+        -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+        border-radius: 80% 80% 1% 1%;
+        position: absolute;
+        top: 57%;
+        left: 2%;
+        &--sec {
+            left: 16%;
+        }
+        &--third {
+            left: 30%;
+        }
+        &--forth {
+            left: 60%;
+        }
+        &--fifth {
+            left: 74%;
+        }
+        &--six {
+            left: 87%;
+        }
+        &--blue {
+            background-color: white;
+            border-style: solid;
+            border-color: @lightblue;
+            border-width: 3px;
+            border-bottom-width: 0px;
+            width: 45px;
+            left: 42%;
+            height: 48px;
+        }
+    }
+    &__mainWindow {
+        width: 56px;
+        height: 65px;
+        position: absolute;
+        top: -23%;
+        left: 41%;
+        background: @green;
+    }
+    &__triangle {
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 12px solid @red;
+        position: absolute;
+        top: -37%;
+        left: 43%;
+        &--middle {
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid @red;
+            position: absolute;
+            top: -44%;
+            left: 47%;
+        }
+        &--last {
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 12px solid @red;
+            position: absolute;
+            top: -37%;
+            left: 53%;
+        }
+        &__middle {
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid @lightred;
+            position: absolute;
+            top: -34%;
+            left: 48.5%;
+        }
+    }
+    &__greenWindow {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: -10%;
+        left: 45%;
+        border-style: solid;
+        border-color: @darkgreen;
+        border-width: 2px 0px 2px 0px;
+        background: linear-gradient( to bottom, #0f4825 3%, transparent 5%, transparent 25%, #0f4825 26%, #0f4825 28%, transparent 37%, transparent 95%, #0f4825 98%), linear-gradient(to right, #0f4825 3%, #78c6ea 5%, #78c6ea 30%, #0f4825 32%, #0f4825 35%, #78c6ea 37%, #78c6ea 62%, #0f4825 64%, #0f4825 67%, #78c6ea 70%, #78c6ea 95%, #0f4825 93%) ;
+    }
+    &__darkgreenLine {
+        width: 4px;
+        height: 25px;
+        position: absolute;
+        top: 11%;
+        left: 7%;
+        background: @darkgreen;
+        &--sec{
+            left: 21%;
+        }
+        &--third{
+            left: 34%;
+        }
+        &--forth{
+            left: 65%;
+        }
+        &--fifth{
+            left: 79%;
+        }
+        &--six{
+            left: 92%;
+        }
+    }
+}

@@ -1,0 +1,190 @@
+@import "variables";
+@import "global";
+.sideTower {
+    width: 60px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    &--left {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        .shortWindow {
+            border-color: @darkred;
+            &--left {
+                position: absolute;
+                top: 10%;
+                left: 80%;
+            }
+            &--right {
+                position: absolute;
+                top: 10%;
+                left: 98%;
+            }
+        }
+    }
+    .shortWindow {
+        border-color: @darkred;
+        &--left {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+        &--right {
+            position: absolute;
+            top: 10%;
+            left: 85%;
+        }
+    }
+    &__side {
+        height: 100%;
+        background: linear-gradient(to right, #ffa914 20%, #ea8c2e 22%, #ea8c2e 74%, #933205 75%);
+    }
+    &__windowsTear {
+        .windowTowerTop(@darkred;
+        @red);
+        position: absolute;
+        top: 22%;
+        left: 29%;
+    }
+    &__mainWindow {
+        display: inline-table;
+        height: 100px;
+        max-width: 30%;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        &--rigth {
+            left: 50%;
+        }
+        &--baseleft {
+            top: 104%;
+            left: -1%;
+        }
+        &--baseleft--rigth {
+            top: 104%;
+            left: 9%;
+        }
+        &--basecenter {
+            top: 104%;
+            left: 36%;
+        }
+        &--basecenter--rigth {
+            top: 104%;
+            left: 49%;
+        }
+        &--baserigth {
+            top: 104%;
+            left: 77%;
+        }
+        &--baserigth--rigth {
+            top: 104%;
+            left: 89%;
+        }
+        &__windowSquer {
+            width: 10px;
+            height: 10px;
+            background: @red;
+            border-style: solid;
+            border-color: @darkred;
+            border-width: 1px;
+            &__left-rigth {
+                width: 5px;
+                height: 5px;
+                background: @lightblue;
+                &__center {
+                    width: 7px;
+                    height: 5px;
+                    background: @lightblue;
+                }
+            }
+        }
+    }
+    &__balcony {
+        .balcony(@red;
+        75px;
+        10px);
+        position: absolute;
+        left: -10%;
+        top: -10%;
+    }
+    &__balconBase {
+        .balconyBase(72px;
+        7px;
+        @blue);
+        position: absolute;
+        top: -5%;
+        left: -10%;
+    }
+    &__clock {
+        width: 50px;
+        height: 30px;
+        background: @red;
+        position: absolute;
+        left: 5%;
+        top: -26%;
+        &__circle {
+            width: 20px;
+            height: 20px;
+            background: #ffe6e6;
+            border-radius: 50%;
+            border-style: solid;
+            border-color: white;
+            position: absolute;
+            top: 6%;
+            left: 22%;
+        }
+        &__long {
+            width: 2px;
+            height: 8px;
+            background: black;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: rotete(45deg);
+        }
+    }
+    &__smallTower {
+        width: 40px;
+        height: 26px;
+        background: linear-gradient(to right, #ffa914 20%, #ea8c2e 22%, #ea8c2e 74%, #933205 75%);
+        border-top-style: solid;
+        border-top-color: white;
+        position: absolute;
+        top: -40%;
+        left: 15%;
+    }
+    &__roof {
+        .windowTowerTop;
+        border-color: transparent;
+        height: 50px;
+        width: 50px;
+        background: linear-gradient(to right bottom, @lightorange 48%, @orange 52%);
+        border-radius: 29% 0 29% 50% / 50% 0 50% 50%;
+        position: absolute;
+        top: -60%;
+        left: 5%;
+    }
+    &__smallTowerRed {
+        height: 25px;
+        width: 15px;
+        background: linear-gradient(to right, @lightred 20%, @red 22%, @red 74%, @darkred 75%);
+        position: absolute;
+        top: -75%;
+        left: 36%;
+        border-bottom-style: solid;
+        border-bottom-color: white;
+    }
+    &__roofTop {
+        .windowTowerTop;
+        background: linear-gradient(to right bottom, @red 48%, @darkred 52%);
+        height: 35px;
+        width: 35px;
+        border-radius: 29% 0 29% 50% / 50% 0 50% 50%;
+        position: absolute;
+        top:-90%;
+        left: 20%;
+    }
+}

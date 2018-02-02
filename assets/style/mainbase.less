@@ -1,0 +1,65 @@
+@import "variables";
+@import "global";
+.mainbase {
+    height: 100px;
+    width: 360px;
+    position: absolute;
+    top: 87%;
+    left: 34%;
+    background: linear-gradient(to bottom, @blue 50%, @darkblue 52%);
+    &__redWindow {
+        width: 30px;
+        height: 80px;
+        background-color: @red;
+        -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+        border-radius: 80% 80% 1% 1%;
+        border-style: solid;
+        border-color: @lightblue;
+        border-width: 6px 6px 0px 6px;
+        position: absolute;
+        top: 16%;
+        left: 8%;
+        &--rigth {
+            left: 80%;
+        }
+        &__blue {
+            height: 75px;
+            width: 5px;
+            background-color: @darkgreen;
+            border-color: @lightblue;
+            border-style: solid;
+            border-width: 11px 2px 0px 2px;
+            border-radius: 80% 80% 1% 1%;
+            position: absolute;
+            left: 50%;
+            top: 15%;
+            &--sec {
+                left: 36%;
+            }
+            &--third {
+                left: 43%;
+            }
+            &--forth {
+                left: 57%;
+            }
+            &--fifth{
+                left: 64%;
+            }
+        }
+    }
+    &__balcony{
+    .balcony;
+    height: 12px;
+    position: absolute;
+    left:0%;
+    top:-22%;
+    }
+    &__balconyBase{
+        height: 5px;
+        width: 360px;
+        background: @darkred;
+        position: absolute;
+        left:0%;
+        top: -8%;
+    }
+}
