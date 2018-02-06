@@ -5,39 +5,25 @@
     height: 200px;
     background: red;
     position: absolute;
-    top: 50%;
+    top: 31%;
     left: 50%;
-    &--rigth{
+    .shortWindow {
+        border-color: @darkred;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        &--left {
+            margin-left: -24px;
+        }
+        &--right {
+            margin-left: 21px;
+        }
+    }
+    &--rigth {
         margin-left: 32px;
     }
     &--left {
-       margin-left: -179px;
-        .shortWindow {
-            border-color: @darkred;
-            &--left {
-                position: absolute;
-                top: 10%;
-                left: 80%;
-            }
-            &--right {
-                position: absolute;
-                top: 10%;
-                left: 98%;
-            }
-        }
-    }
-    .shortWindow {
-        border-color: @darkred;
-        &--left {
-            position: absolute;
-            top: 10%;
-            left: 10%;
-        }
-        &--right {
-            position: absolute;
-            top: 10%;
-            left: 85%;
-        }
+        margin-left: -179px;
     }
     &__side {
         height: 100%;
@@ -56,13 +42,13 @@
         max-width: 30%;
         position: absolute;
         top: 30%;
-        left: 30%;
+        left: 50%;
+        margin-left: -12px;
         &--rigth {
-            left: 50%;
+            margin-left: -1px;
         }
         &--baseleft {
             top: 104%;
-            left: -1%;
         }
         &--baseleft--rigth {
             top: 104%;
@@ -177,6 +163,8 @@
         left: 36%;
         border-bottom-style: solid;
         border-bottom-color: white;
+        border-top-style: solid;
+        border-top-color: white;
     }
     &__roofTop {
         .windowTowerTop;
@@ -185,7 +173,7 @@
         width: 35px;
         border-radius: 29% 0 29% 50% / 50% 0 50% 50%;
         position: absolute;
-        top:-90%;
-        left: 20%;
+        top: -93%;
+        left: 17%;
     }
 }
