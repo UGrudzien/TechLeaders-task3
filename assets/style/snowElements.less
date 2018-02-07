@@ -12,7 +12,17 @@
         margin: 0px -300px;
     }
     &--right {
-        margin: 0px 600px;
+        margin: 0px 300px;
+        animation-duration: 8s;
+    }
+    &--red {
+        margin: 0px 250px;
+        animation-duration: 10s;
+        .stroke:before,.stroke:after {
+              border: 1px solid red;
+              border-top: 0;
+              border-left: 0;
+        }
     }
 }
 
@@ -25,6 +35,22 @@
     left: 24px;
     -webkit-box-shadow: 2px 2px 50px 0px rgba(255, 255, 255, 0.3);
     box-shadow: 2px 2px 50px 0px rgba(255, 255, 255, 0.3);
+    &__animation {
+        width: 2px;
+        background: linear-gradient(273deg, red 30%, yellow 70%);
+        background-size: 400% 400%;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+        /*&:before {
+            border: 1px solid red;
+        }
+        &:after {
+            border: 1px solid red;
+        }*/
+    }
 }
 
 .stroke:before,
@@ -63,7 +89,43 @@
         transform: rotate(0deg);
     }
     to {
-        top: 70%;
+        top: 90%;
         transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
     }
 }
