@@ -1,28 +1,54 @@
+@import "global";
 .container {
     width: 50px;
     height: 50px;
     position: absolute;
     top: 0%;
     left: 50%;
-    animation-name: example;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
     &--left {
         margin: 0px -300px;
+        .snowflakeRotation-1;
     }
     &--right {
         margin: 0px 300px;
+        .snowflakeRotation-1;
         animation-duration: 8s;
     }
-    &--red {
-        margin: 0px 250px;
-        animation-duration: 10s;
-        .stroke:before,.stroke:after {
-              border: 1px solid red;
-              border-top: 0;
-              border-left: 0;
+    &--smaller{
+        margin: 0px -200px;
+        z-index: -1;
+        .snowflakeRotation-3;
+        animation-duration: 20s
+    }
+    &--smaller2{
+        margin: 0px 100px;
+        .snowflakeRotation-2;
+    }
+    &__white {
+        .stroke:before,
+        .stroke:after {
+            border: 1px solid lightgray;
+            border-top: 0;
+            border-left: 0;
         }
+        .snowflakeRotation-2;
+        animation-duration: 10s;
+        &--1 {
+            margin: 0px -250px;
+        }
+        &--2{
+            margin: 0px 50px;
+        }
+        &--3{
+            .snowflakeRotation-3;
+            margin: 0px 100px;
+        }
+    }
+    &__resize {
+        margin-left: 100px;
+        z-index: -1;
+        .snowflakeRotation-1;
+        animation-duration: 15s;
     }
 }
 
@@ -37,13 +63,13 @@
     box-shadow: 2px 2px 50px 0px rgba(255, 255, 255, 0.3);
     &__animation {
         width: 2px;
-        background: linear-gradient(273deg, red 30%, yellow 70%);
+        background: linear-gradient(273deg, white 30%, grey 50%, white 60%);
         background-size: 400% 400%;
         animation-duration: 10s;
         animation-iteration-count: infinite;
-        -webkit-animation: Gradient 15s ease infinite;
-        -moz-animation: Gradient 15s ease infinite;
-        animation: Gradient 15s ease infinite;
+        -webkit-animation: Gradient 10s ease infinite;
+        -moz-animation: Gradient 10s ease infinite;
+        animation: Gradient 10s ease infinite;
         /*&:before {
             border: 1px solid red;
         }
@@ -81,17 +107,6 @@
 
 .stroke-4 {
     transform: rotate(-45deg);
-}
-
-@keyframes example {
-    from {
-        top: 0%;
-        transform: rotate(0deg);
-    }
-    to {
-        top: 90%;
-        transform: rotate(359deg);
-    }
 }
 
 @-webkit-keyframes Gradient {

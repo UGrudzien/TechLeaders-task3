@@ -5,7 +5,7 @@
     height: 200px;
     background: red;
     position: absolute;
-    top: 35%;
+    top: 44%;
     left: 50%;
     .shortWindow {
         border-color: @darkred;
@@ -20,10 +20,10 @@
         }
     }
     &--rigth {
-        margin-left: 32px;
+        margin-left: 68px;
     }
     &--left {
-        margin-left: -179px;
+        margin-left: -136px;
     }
     &__side {
         height: 100%;
@@ -125,8 +125,8 @@
         }
         &__long {
             width: 2px;
-            height: 20px;
-            background: linear-gradient(to bottom, black 49%, transparent 51%);
+            height: 10px;
+            background: black;
             position: absolute;
             top: 14%;
             left: 44%;
@@ -134,8 +134,9 @@
             animation-duration: 10s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
+            transform-origin: 50% 100%;
             &--short {
-                height: 16px;
+                height: 8px;
                 left: 45%;
                 top: 20%;
                 animation-name: clock;
@@ -144,21 +145,21 @@
                 animation-timing-function: linear;
                 animation-duration: 20s;
             }
-            &__right{
+            &__right {
                 animation-name: clock2;
                 animation-duration: 1s;
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;
-                
-                &--short{
-                    height: 16px;
-                left: 45%;
-                top: 20%;
-                animation-name: clock2;
-                animation-duration: 5s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
-              
+                &--short {
+                    height: 8px;
+                 
+                    
+                    left: 45%;
+                    top: 20%;
+                    animation-name: clock2;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
                 }
             }
         }

@@ -1,7 +1,6 @@
 @import "variables";
 body{
-    position: relative;
-    min-height: 900px;
+
     background: #ffe6e6;
 }
 .shortWindow{
@@ -43,4 +42,57 @@ body{
     width: @width;
     height: @height;
     background: @background;
+}
+.crip{
+    bottom: 0px;
+    left: 50%;
+    margin-left: 20px;
+}
+.snowflakeRotation-1{
+        animation-name: rotation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.snowflakeRotation-2{
+        animation-name: resize;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.snowflakeRotation-3{
+        animation-name: resize-bigger;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation {
+    from {
+        top: 0%;
+        transform: rotate(0deg);
+    }
+    to {
+        top: 100%;
+        transform: rotate(359deg);
+    }
+}
+@keyframes resize{
+     from {
+        top: 0%;
+        transform: rotate(0deg) scale(.5);
+    }
+    to {
+        top: 100%;
+        transform: rotate(359deg) scale(.5);
+    }
+}
+@keyframes resize-bigger{
+     from {
+        top: 0%;
+        transform: rotate(0deg) scale(.5);
+    }
+    to {
+        top: 100%;
+        transform: rotate(359deg) scale(1);
+    }
 }
