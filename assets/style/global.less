@@ -66,6 +66,12 @@ body{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+.starrotation{
+      animation-name: star;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 @keyframes rotation {
     from {
         top: 0%;
@@ -94,5 +100,13 @@ body{
     to {
         top: 100%;
         transform: rotate(359deg) scale(1);
+    }
+}
+@keyframes star{
+    from{
+        transform: scale(.1) rotate(0deg);
+    }
+    to{
+        transform: scale(1) rotate(359deg);
     }
 }
