@@ -1132,50 +1132,50 @@ body {
     transform: scale(0.2);
     opacity: 0;
     top: 65%;
-    left: 42%;
+    left: 62%;
   }
   5% {
     transform: scale(0.2);
     opacity: 1;
     top: 65%;
-    left: 40%;
+    left: 60%;
   }
   35% {
     transform: scale(0.2);
     opacity: 1;
     top: 65%;
-    left: 35%;
+    left: 55%;
   }
   48% {
     transform: scale(0.2) rotateY(-180deg);
     opacity: 1;
     top: 65%;
-    left: 35%;
+    left: 55%;
     animation-duration: 1s;
   }
-  49% {
+  48% {
     transform: scale(0.2) rotateY(180deg);
     opacity: 1;
     top: 65%;
-    left: 35%;
+    left: 55%;
     animation-duration: 1s;
   }
   60% {
     transform: scale(0.2);
     opacity: 1;
     top: 65%;
-    left: 34%;
+    left: 44%;
   }
   95% {
     transform: scale(0.2);
     opacity: 1;
     top: 65%;
-    left: 25%;
+    left: 40%;
   }
   100% {
     transform: scale(0.2);
     opacity: 0;
     top: 65%;
-    left: 24%;
+    left: 38%;
   }
 }
