@@ -1,8 +1,29 @@
 @import "variables";
 body{
 
-    background: red;
+    background: #ffe6e6;
+
 }
+.crip{
+      height: 700px;
+    width: 1200px;
+position: absolute;
+    bottom: 0%;
+left: 50%;
+
+    @media ( min-height:800px){
+    transform:scale(1.0);}
+  @media(min-height: 768px) and( min-width:414px){
+      transform: scale(0.8);
+      bottom: 0%;
+  }
+  @media(max-height:640px) and (max-width:360px){
+      transform: scale(0.5);
+      bottom: 0%;
+  }
+}
+
+
 .shortWindow{
     min-height: 140px;
     border-style: solid;
@@ -43,11 +64,7 @@ body{
     height: @height;
     background: @background;
 }
-.crip{
-    bottom: 0px;
-    left: 50%;
-    margin-left: 20px;
-}
+
 .snowflakeRotation-1{
         animation-name: rotation;
     animation-duration: 6s;
@@ -78,7 +95,7 @@ body{
         transform: rotate(0deg);
     }
     to {
-        top: 100%;
+        top: 98%;
         transform: rotate(359deg);
     }
 }
@@ -88,7 +105,7 @@ body{
         transform: rotate(0deg) scale(.5);
     }
     to {
-        top: 100%;
+        top: 98%;
         transform: rotate(359deg) scale(.5);
     }
 }
@@ -98,7 +115,7 @@ body{
         transform: rotate(0deg) scale(.5);
     }
     to {
-        top: 100%;
+        top: 98%;
         transform: rotate(359deg) scale(1);
     }
 }
