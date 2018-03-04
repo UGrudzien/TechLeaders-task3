@@ -68,3 +68,5 @@ gulp.task('dev', ['less', 'browser-sync'], () => {
     gulp.watch('./assets/style/**/*.less', ['less', 'browserSync-reload']); // Reload on LeSS file changes.
     gulp.watch('*.html', [browserSync.reload]);
 });
+
+gulp.task('build', ["less"] );
